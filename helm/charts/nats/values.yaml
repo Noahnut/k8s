@@ -437,7 +437,7 @@ service:
   # https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.24/#service-v1-core
   merge: {
     spec: {
-      type: LoadBalancer
+      type: NodePort
     }
   }
   patch: []
