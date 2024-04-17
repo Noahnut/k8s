@@ -435,7 +435,10 @@ service:
 
   # merge or patch the service
   # https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.24/#service-v1-core
-  merge: {}
+  merge: {
+    spec: 
+      type: LoadBalancer
+  }
   patch: []
   # defaults to "{{ include "nats.fullname" $ }}"
   name:
